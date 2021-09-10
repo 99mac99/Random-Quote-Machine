@@ -17,17 +17,7 @@ const quotes = [
 
 ]
 
-const authors = [
-	'Thomas Edison',
-	'Yogi Berra',
-	'Abraham Lincoln',
-	'Johann Wolfgang von Goethe',
-	'Byron Pulsifer',
-	'Lao Tzu',
-	'Carl Sandburg',
-	'Aristotle',
-	'Yogi Berra',
-];
+
 
 const showRandomQuotes = () => {
 	const number = Math.floor(Math.random() * (quotes.length - 1));

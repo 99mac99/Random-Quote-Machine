@@ -4,16 +4,7 @@ const quoteAuthor = document.querySelector('.quote-author');
 const colorTextChanger = document.querySelector('.button')
 const colorChanger = document.querySelector('.button')
 
-// const quotes = [
-// 	'Thomas Edison': 'Genius is one percent inspiration and ninety-nine percent perspiration.',
-// 	'Yogi Berra':'A house divided against itself cannot stand.',
-// 	'Abraham Lincoln': 'Difficulties increase the nearer we get to the goal.',
-// 	'Johann Wolfgang von Goethe':'Fate is in your hands and no one elses',
-// 	'Byron Pulsifer':'Be the chief but never the lord.',
-// 	'Lao Tzu':'Nothing happens unless first we dream.',
-// 	'Carl Sandburg':'Well begun is half done.',
-// 	'Yogi Berra':'Life is a learning experience, only if you learn.',
-// ];
+
 const quotes = [
 	'Genius is one percent inspiration and ninety-nine percent perspiration.',
 	'A house divided against itself cannot stand.',

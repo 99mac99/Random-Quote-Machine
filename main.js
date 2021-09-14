@@ -13,24 +13,14 @@ const getQuotes = () => {
 			quoteAuthor.textContent = res.data.character.name
 		})
 }
-
-// const colorr = colorChanger.forEach(el) => 
-
 const colorChange = () => {
 	const r = Math.floor(Math.random() * 255)
 	const g = Math.floor(Math.random() * 255)
 	const b = Math.floor(Math.random() * 255)
 	colorChanger.forEach((el) =>(el.style.background = `rgb(${r},${g},${b})`))
-}
-
-const colorChangeText = () => {
-	const r = Math.floor(Math.random() * 255)
-	const g = Math.floor(Math.random() * 255)
-	const b = Math.floor(Math.random() * 255)
 	colorText.forEach((el) => (el.style.color = `rgb(${r},${g},${b})`))
 }
-
 newQuoteButton.addEventListener('click', getQuotes )
 newQuoteButton.addEventListener('click', colorChange)
-newQuoteButton.addEventListener('click', colorChangeText)
+
 

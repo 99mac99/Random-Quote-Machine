@@ -1,25 +1,24 @@
 const newQuoteButton = document.querySelector('.button');
 const quoteText = document.querySelector('.quote-text');
 const quoteAuthor = document.querySelector('.quote-author')
-
+const text = document.querySelector('.text')
 
 const apiLink ='https://game-of-thrones-quotes.herokuapp.com/v1/random'
 
-const getQuote = () => {
-	url = apiLink
+const getQuotes = () => {
+	axios.get(apiLink)
+		.then(res =>{ 
+			quoteText.textContent = res.data.sentence
+			quoteAuthor.textContent = res.data.character.name
+			console.log(res.data )
+			console.log(quotes)
+			console.log(author)
+		})
 
-	axios.get(url)
-	.then(res =>console.log(res))
 }
 
 
-
-
-getQuote()
-
-
-
-
+getQuotes()
 
 
 
